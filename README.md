@@ -1,6 +1,6 @@
-# AU Postcode
+# Immutable Array Helper
 
-Get the corresponding Australian state by postcode
+A JavaScript Library for immutable array helpers
 
 ## How to use
 
@@ -39,4 +39,30 @@ const a = [1, 2, 3];
 const b = del(a, 1);
 
 console.log(b); // [1, 3]
+```
+
+### pop()
+
+Removes the last item from the array.
+
+```js
+import { del } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = pop(a);
+
+console.log(b); // [1, 2]
+```
+
+### push()
+
+Adds a new item at the end of an array.
+
+```js
+import { del } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = push(a, 4);
+
+console.log(b); // [1, 2, 3, 4]
 ```

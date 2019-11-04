@@ -6,6 +6,10 @@
   "repository": "https://github.com/szaranger/immutable-lib.git",
   "author": "Sean Amarasinghe",
   "license": "MIT",
+  "keywords": [
+    "immutable",
+    "array"
+  ],
   "scripts": {
     "test": "mocha --require babel-core/register --require babel-polyfill --recursive **/*.test.js"
   },
