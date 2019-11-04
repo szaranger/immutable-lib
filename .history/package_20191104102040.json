@@ -1,0 +1,20 @@
+{
+  "name": "immutable-lib",
+  "version": "1.0.0",
+  "description": "Immutable helpers for arrays",
+  "main": "index.js",
+  "repository": "https://github.com/szaranger/immutable-lib.git",
+  "author": "Sean Amarasinghe",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --require babel-core/register --require babel-polyfill --recursive"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
