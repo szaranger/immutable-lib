@@ -59,10 +59,75 @@ console.log(b); // [1, 2]
 Adds a new item at the end of an array.
 
 ```js
-import { del } from "immutable-lib";
+import { push } from "immutable-lib";
 
 const a = [1, 2, 3];
 const b = push(a, 4);
 
 console.log(b); // [1, 2, 3, 4]
+```
+
+### reverse()
+
+Reverses the order of an array.
+
+```js
+import { reverse } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = reverse(a);
+
+console.log(b); // [3, 2, 1]
+```
+
+### shift()
+
+Removes an item from the beginning of an array.
+
+```js
+import { shift } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = shift(a);
+
+console.log(b); // [2, 3]
+```
+
+### sort()
+
+Sorts an array.
+
+```js
+import { sort } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = sort(a, (x, y) => y - x);
+
+console.log(b); // [3, 2, 1]
+```
+
+### splice()
+
+Modifies the contents of an array.
+
+```js
+import { splice } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = splice(a, 2, 2, [7, 8]);
+
+console.log(b); // [1, 2, [7, 8], 5, 6]
+```
+
+### unshift()
+
+Adds an item from the beginning of an array.
+
+```js
+import { sort } from "immutable-lib";
+
+const a = [1, 2, 3];
+const b = unshift(a, 4);
+
+console.log(b); // [4, 1, 2, 3]
 ```
