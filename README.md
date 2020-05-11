@@ -124,7 +124,7 @@ console.log(b); // [1, 2, [7, 8], 5, 6]
 Adds an item from the beginning of an array.
 
 ```js
-import { sort } from "immutable-lib";
+import { unshift } from "immutable-lib";
 
 const a = [1, 2, 3];
 const b = unshift(a, 4);
